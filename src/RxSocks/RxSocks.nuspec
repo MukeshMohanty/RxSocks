@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>RxSocks</id>
+    <version>1.0.1</version>
+    <title>Reactive Async Socket</title>
+    <authors>Mukesh Mohanty</authors>
+    <owners>mukeshmohanty</owners>
+    <licenseUrl>https://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <projectUrl>https://github.com/MukeshMohanty/RxSocks</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Check https://github.com/MukeshMohanty/RxSocks for details.</description>
+    <releaseNotes>Removed preview limitation</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>websocket async reactive rx</tags>
+    <dependencies>
+      <dependency id="System.Reactive" version="4.1.2" />
+	    <dependency id="Newtonsoft.Json" version="11.0.2" />
+	    <dependency id="MessagePack" version="1.7.3.4" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\release\*.dll" target="lib\net45" />
+  </files>
+</package>

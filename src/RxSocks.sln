@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxSocks", "RxSocks\RxSocks.csproj", "{CFF853DD-C1B3-47A4-A213-EF1F7DE8120E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CFF853DD-C1B3-47A4-A213-EF1F7DE8120E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFF853DD-C1B3-47A4-A213-EF1F7DE8120E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFF853DD-C1B3-47A4-A213-EF1F7DE8120E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFF853DD-C1B3-47A4-A213-EF1F7DE8120E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89789621-7E5C-4159-81CF-72FF9A0C393C}
+	EndGlobalSection
+EndGlobal
