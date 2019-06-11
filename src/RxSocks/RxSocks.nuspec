@@ -14,7 +14,7 @@
     <copyright>Copyright 2018</copyright>
     <tags>websocket async reactive rx</tags>
     <dependencies>
-      <dependency id="System.Reactive" version="4.1.2" />
+      <dependency id="System.Reactive" version="3.1.1" />
 	    <dependency id="Newtonsoft.Json" version="11.0.2" />
 	    <dependency id="MessagePack" version="1.7.3.4" />
     </dependencies>
