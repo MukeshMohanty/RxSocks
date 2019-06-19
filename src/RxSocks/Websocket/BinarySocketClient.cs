@@ -85,17 +85,12 @@ namespace RxSocks.Websocket
         }
 
 
-        private void PublishStatus(ConnectionState state, string message)
-        {
-            PublishStatus(state, message, null);
-        }
-
         private void PublishStatus(ConnectionState state, Exception exception)
         {
             PublishStatus(state, "", exception);
         }
 
-        private void PublishStatus(ConnectionState state, string message, Exception exception)
+        private void PublishStatus(ConnectionState state, string message, Exception exception = null)
         {
             _statusStream.OnNext(new Status
             {
@@ -105,11 +100,9 @@ namespace RxSocks.Websocket
             });
         }
 
-        //async void is bad but there is no other option in this scenario. 
-        //It is equivalent to event handler, caller is not interested in task
         private async void StartListening()
         {
-            var receiveBuffer = new byte[4096 * 20];
+            var receiveBuffer = new byte[4096 * 8];
             while (_webSocket.State == WebSocketState.Open)
             {
                 var totalBytes = new byte[0];
@@ -119,7 +112,7 @@ namespace RxSocks.Websocket
                     result = await _webSocket.ReceiveAsync(new ArraySegment<byte>(receiveBuffer), CancellationToken.None);
 
                     var existingSize = totalBytes.Length;
-                    totalBytes = new byte[existingSize + result.Count];
+                    Array.Resize(ref totalBytes, existingSize + result.Count);
                     Buffer.BlockCopy(receiveBuffer, 0, totalBytes, existingSize, result.Count);
 
                 } while (!result.EndOfMessage);
@@ -127,7 +120,5 @@ namespace RxSocks.Websocket
                 _dataStream.OnNext(totalBytes);
             }
         }
-
-
     }
 }
