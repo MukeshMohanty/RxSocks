@@ -1,6 +1,6 @@
 language: csharp
 solution: RxSocks.sln
 install:
-  - nuget restore RxSocks.sln
+  - nuget restore src/RxSocks.sln
 script:
-  - msbuild /p:Configuration=Release RxSocks.sln
+  - msbuild /p:Configuration=Release src/RxSocks.sln
