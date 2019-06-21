@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/MukeshMohanty/RxSocks.svg?branch=master)](https://travis-ci.org/MukeshMohanty/RxSocks)
+[![NuGet](https://img.shields.io/nuget/v/RxSocks.svg)](https://www.nuget.org/packages/RxSocks)
 
 # RxSocks
 WebSocket api buid on top of vanilla websocket and websocket client, giving async functionalities
