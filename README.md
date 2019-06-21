@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MukeshMohanty/RxSocks.svg?branch=master)](https://travis-ci.org/MukeshMohanty/RxSocks)
+
 # RxSocks
 WebSocket api buid on top of vanilla websocket and websocket client, giving async functionalities
 
